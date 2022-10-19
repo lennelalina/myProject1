@@ -1,0 +1,18 @@
+@import "site-styles";
+@import "site-theme";
+@import "site-header";
+@import "site-mainPage";
+@import "site-aboutUs";
+@import "site-menu";
+@import "site-gallery";
+@import "site-footer";
+
+
+html {
+    height: 100%;
+    }
+    
+    .site-AllContent {
+    min-height:100%;
+    margin: 0;
+    }

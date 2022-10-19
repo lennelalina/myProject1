@@ -1,0 +1,42 @@
+$colorBrandColor: #8bb2b8f1;
+$colorSecondaryBrandColor: rgba(245, 202, 13, 0.515);
+$colorLightBrand: rgba(180, 209, 209, 0.619);
+$colorThirdBrandColor: rgba(83, 201, 203, 0.7);
+$colorLightGray: #010101a5;
+$colorLightest: whitesmoke;
+$colorDarkest: black;
+$colorDarkBlue: #3d8dae;
+$colorOrange: #df8453;
+$colorPink: #e4a9a8;
+$colorLightOrange: #dbad4a;
+$colorGray: rgba(168, 168, 168, 0.848);
+
+:root {
+  @media screen and (prefers-color-scheme: light),
+    screen and (prefers-color-scheme: no-preference) {
+    --site-primaryTextColor: #{$colorLightGray};
+    --site-brandColor: #{$colorBrandColor};
+    --site-galleryBG: #{$colorLightBrand};
+    --site-primaryBgColor: #{$colorSecondaryBrandColor};
+    --site-secondaryBgColor: #{$colorThirdBrandColor};
+    --site-secondaryTextColor: #{$colorLightest};
+    --site-menuTextColor1: #{$colorDarkBlue};
+    --site-menuTextColor2: #{$colorOrange};
+    --site-menuTextColor3: #{$colorPink};
+    --site-menuTextColor4: #{$colorLightOrange};
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    --site-primaryTextColor: #{$colorLightGray};
+    --site-brandColor: #{$colorGray};
+    --site-galleryBG: #{$colorBrandColor};
+    --site-primaryBgColor: #{$colorLightOrange};
+    --site-secondaryBgColor: #{$colorLightOrange};
+    --site-secondaryTextColor: #{$colorLightest};
+
+    --site-menuTextColor1: #{$colorLightGray};
+    --site-menuTextColor2: #{$colorOrange};
+    --site-menuTextColor3: #{$colorPink};
+    --site-menuTextColor4: #{$colorSecondaryBrandColor};
+  }
+}

@@ -1,0 +1,139 @@
+:root {
+  --siteFooter-bgColor: var(--site-primaryBgColor);
+  --siteFooter-hover: var(--site-brandColor);
+  --siteFooter-hover2: var(--site-secondaryTextColor);
+}
+
+.site-footer {
+  background-color: var(--siteFooter-bgColor);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px 50px;
+
+  @media screen and (min-width: 900px) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+
+  @media screen and (min-width: 900px) {
+    order: -1;
+  }
+
+  i {
+    cursor: pointer;
+
+    @media screen and (hover: hover) {
+      &:hover {
+        box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+        color: var(--siteFooter-hover);
+      }
+    }
+  }
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+
+  i {
+    cursor: pointer;
+
+    @media screen and (hover: hover) {
+      &:hover {
+        box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+        color: var(--siteFooter-hover);
+      }
+    }
+  }
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+
+  input {
+    // background-color: rgb(252, 249, 227);
+    // border-radius: 10px;
+    // width: 200px;
+    // height: 25px;
+    // border: 1px solid rgba(0, 40, 120, .9); ;
+    // box-shadow: 0 5px 10px 0 rgba(0, 40, 120, .35);}
+    width: 300px;
+    background: transparent;
+    border: 2px solid var(--siteFooter-hover);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+
+    font-weight: 300;
+
+    @media screen and (min-width: 900px) {
+      width: 400px;
+    }
+    &::placeholder {
+      color: hsla(0, 2%, 13%, 0.5);
+    }
+  }
+
+  button {
+    margin-top: 15px;
+    background: transparent;
+    border: 2px solid;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 200px;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(
+      to left,
+      transparent,
+      transparent 50%,
+      var(--siteFooter-hover) 50%,
+      var(--siteFooter-hover)
+    );
+    background-position: 100% 0;
+    background-size: 200% 100%;
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: all 0.25s ease-in;
+    }
+
+    @media screen and (hover: hover) {
+      &:hover {
+        background-position: 0 0;
+        color: rgb(255, 255, 255);
+      }
+    }
+
+    @media screen and (max-width: 899px) {
+      &:active {
+        background-position: 0 0;
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
+}

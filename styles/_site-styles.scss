@@ -1,0 +1,39 @@
+.site-header {
+  position: fixed;
+  z-index: 999;
+  margin: 0px;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  height: auto;
+}
+
+.site-AllContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-mainContent {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-mainPage {
+  flex: 1 1 800px;
+}
+
+.site-aboutUs {
+  flex: 1 1 900px;
+}
+
+.site-menu {
+  flex: 1 1 700px;
+}
+
+.site-gallery {
+  flex: 1 1 650px;
+}
+
+.site-footer {
+  flex: 0 0 300px;
+}

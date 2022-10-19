@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp.com</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" type="text/css" href="styles/css/icons.css">
+
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="styles/text.css">
+<script defer src="styles/gallery.js"></script>
+<script defer src="styles/fruits.js"></script>
+
+<link rel="shortcut icon" href="styles/img/lemon-little.png" type="image/png">
+</head>
+<body>
+
+<header class="site-header">
+
+<div class="site-logo"><i class="fa-brands fa-gulp fa-4x"></i> </div>
+
+<input type="checkbox" id="navToggle">
+<label for="navToggle"> 
+    <i class="fa-solid fa-align-justify fa-3x"></i></label>
+ 
+ <nav class="site-nav">
+     <ul>
+         <li> <a href="#home">HOME</a></li>
+         <li> <a href="#aboutUs">ABOUT US</a></li>
+         <li> <a href="#menu">MENU</a></li>
+         <li> <a href="#gallery">GALLERY</a></li>
+         <li> <a href="#contacts">CONTACTS</a></li>
+     </ul>
+ </nav>
+</header>
+<section class="site-AllContent">
+
+<main class="site-mainContent">
+    <section class="site-mainPage" id="home">  
+            <div class="mainPage-text">
+<p class="mainPage-textp">Tired of writing code in the heat? <br>
+    Does the keyboard melt with the brain?
+</p>
+<h3>Gulp will save you!</h3>
+</div>
+<button class="mainPage-button">FRESHEN UP</button>
+</section>
+<section class="site-aboutUs" id="aboutUs">
+    <div class="aboutUs-mainText">
+Аre you a programmer?</div>
+<div class="aboutUs-text">
+<div class="aboutUs-secondaryText">
+Leverage gulp and the flexibility of JavaScript to automate slow, repetitive workflows and compose them into efficient build pipelines.
+<p>
+And drink our lemonade, which will increase your efficiency and refresh you on a summer day.</p>
+</div>
+<div class="aboutUs-thirdText">
+We have been working since 2015. And during this period of time we have established contacts with the largest IT companies in Europe.
+<p> We are ready to open a franchise in any of your cities or cooperate as b2b.
+</p></div>
+</div>
+</section>
+<section class="site-menu" id="menu"> 
+<div class="menu-mainText">MENU</div>
+<div class="menu-secondText">
+    <span class="title-word title-word-1">Let's</span>
+    <span class="title-word title-word-2">make</span>
+    <span class="title-word title-word-3">your own</span>
+    <span class="title-word title-word-4">lemonade!</span></div>
+
+<div class="menu-form">
+<form class="menu-formInput">
+<label>The taste:</label>
+<div  class="styled-input-single"><input name="taste" type="radio" value="sweet" id="input-tasteSweet">
+    <label for="input-tasteSweet">Sweet</label></div>
+
+<div  class="styled-input-single"><input name="taste" type="radio" value="sour" id="input-tasteSour">
+        <label for="input-tasteSour">Sour</label></div>
+</form>
+
+<form class="menu-formInput">
+<label>The size:</label>
+<div  class="styled-input-single"><input name="size" type="radio" value="500" id="input-size500">
+    <label for="input-size500">500 ml</label></div>
+    <div  class="styled-input-single"><input name="size" type="radio" value="400" id="input-size400">
+        <label for="input-size400">400 ml</label></div>
+        <div  class="styled-input-single"><input name="size" type="radio" value="250" id="input-size250">
+            <label for="input-size250">250 ml</label></div>
+
+
+</form>
+
+<form class="menu-formInput" >
+<label>Add something:</label>
+   <div class="styled-input-container styled-input--square">
+    <div class="styled-input-single">   
+    <input type="checkbox" name="add" value="ice" id="input-addIce" >
+    <label for="input-addIce">Ice </label></div> </div>
+
+    <div class="styled-input-container styled-input--square">
+        <div class="styled-input-single">   
+        <input type="checkbox" name="add" value="mint" id="input-addMint" >
+        <label for="input-addMint">Mint </label></div> </div>
+
+        <div class="styled-input-container styled-input--square">
+            <div class="styled-input-single">   
+            <input type="checkbox" name="add" value="Syrup" id="input-addSyrup" >
+            <label for="input-addSyrup">Syrup</label></div> </div>
+
+</form>
+
+<form class="menu-formIngredients">
+<label>The main ingredient:</label>
+<select name="select" class="menu-formSelect"  >
+    <option  value="lemon" name="fruits"> Lemon </option>
+    <option  value="orange" name="fruits">Orange</option>
+    <option  value="straw" name="fruits">Strawberry</option>
+   </select>
+<button id="menu-order" type="submit"> To order </button>
+
+   <div class="img-fruits-options">   
+<img class="fr" src="styles/img/glass.png" >
+</div> 
+</form>
+</div>
+
+
+
+</section>
+<section class="site-gallery" id="gallery">
+<div class="container">
+<div class="slider">
+<div class="slider_container">
+<div class="slide"><img srcset = "styles/img/slide1-little.jpg, styles/img/slide1.jpg 2x" width="100%" height="auto"></div>
+<div class="slide"><img srcset = "styles/img/slide2-little.jpg, styles/img/slide2.jpg 2x" width="100%" height="auto"></div>
+<div class="slide"><img srcset = "styles/img/slide3-little.jpg, styles/img/slide3.jpg 2x" width="100%" height="auto"></div>
+<div class="slide"><img srcset = "styles/img/slide4-little.jpg, styles/img/slide4.jpg 2x" width="100%" height="auto"></div>
+<div class="slide"><img srcset = "styles/img/slide5-little.jpg, styles/img/slide5.jpg 2x" width="100%" height="auto"></div>
+<div class="slide"><img srcset = "styles/img/slide6-little.jpg, styles/img/slide6.jpg 2x" width="100%" height="auto"></div>
+<div class="slide"><img srcset = "styles/img/slide7-little.jpg, styles/img/slide7.jpg 2x" width="100%" height="auto"></div>
+</div>
+<div class="gallery-buttons">
+<a href="#" class="gallery-nav action-prev" data-dir="prev">Previous</a>
+<a href="#" class="gallery-nav action-next"  data-dir="next">Next</a></div>
+</div></div>
+</section>
+</main>
+
+<footer class="site-footer" id="contacts">
+
+<div class="footer-form">
+<label class="footer-form-label">Leave your email to receive news about discounts and new products!</label>
+<input type="email" name="subscribe" placeholder="example@gmail.com" required>
+<button type="submit">SUBSCRIBE</button>
+
+</div>
+<div class="footer-contacts">
+  <div class="footer-phone"> <u><strong>Phone number:</strong></u> +375(44)8763527 </div> 
+  <div class="footer-adress"><u> <strong>Address:</strong></u> Steven Bernson, at Law
+    1556 Broadway, <br> New York,
+  NY, 10120, USA &#160;&#160;
+    <i class="fa-solid fa-map-location-dot fa-2x"></i></div>
+
+<div class="footer-icons">
+    
+<i class="fa-brands fa-instagram fa-3x"></i>
+<i class="fa-brands fa-twitter fa-3x"></i>
+<i class="fa-brands fa-telegram fa-3x"></i>
+<i class="fa-brands fa-facebook fa-3x"></i>
+</div></div>
+</footer>
+</section> 
+</body>
+</html> 
